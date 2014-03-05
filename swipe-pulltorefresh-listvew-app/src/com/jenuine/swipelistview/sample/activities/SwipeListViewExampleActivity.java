@@ -41,24 +41,32 @@ public class SwipeListViewExampleActivity extends FragmentActivity {
 
 	private ProgressDialog progressDialog;
 
-	
 	@Override
 	public void onBackPressed() {
 		// TODO Auto-generated method stub
 //		super.onBackPressed();
 	}
-	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
 		setContentView(R.layout.swipe_list_view_activity);
+		swipeListView = (SwipePulltoRefreshListView) findViewById(R.id.example_lv_list);
 
+		
+
+	}
+ 
+	@Override
+	protected void onResume() {
+		// TODO Auto-generated method stub
+		super.onResume();
+		
+		
 		data = new ArrayList<PackageItem>();
 
 		adapter = new PackageAdapter(this, data);
 
-		swipeListView = (SwipePulltoRefreshListView) findViewById(R.id.example_lv_list);
 
 		swipeListView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE_MODAL);
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
@@ -186,10 +194,7 @@ public class SwipeListViewExampleActivity extends FragmentActivity {
 		progressDialog.setMessage(getString(R.string.loading));
 		progressDialog.setCancelable(false);
 		progressDialog.show();
-
 	}
- 
-	
 	
 	public void loadItemsRefresh(){
 		new ListAppTask().execute();
