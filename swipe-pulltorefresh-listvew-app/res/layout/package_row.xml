@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+        >
+
+    <LinearLayout
+            android:id="@+id/back"
+            android:tag="back"
+            android:layout_height="0dp"
+            style="@style/ListBackContent"
+            >
+
+<!--         <Button -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:id="@+id/example_row_b_action_1" -->
+<!--                 style="@style/ListButtonAction" -->
+<!--                 android:text="@string/open"/> -->
+
+<!--         <Button -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:id="@+id/example_row_b_action_2" -->
+<!--                 style="@style/ListButtonAction" -->
+<!--                 android:text="@string/googlePlay"/> -->
+
+<!--         <Button -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:id="@+id/example_row_b_action_3" -->
+<!--                 style="@style/ListButtonAction" -->
+<!--                 android:text="@string/uninstall"/> -->
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:orientation="vertical"
+            android:id="@+id/front"
+            android:tag="front"
+            style="@style/ListFrontContent">
+
+        <ImageView
+                style="@style/ListImage"
+                android:id="@+id/example_row_iv_image"/>
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/example_row_iv_image"
+                style="@style/ListTitle"
+                android:id="@+id/example_row_tv_title"/>
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/example_row_iv_image"
+                android:layout_below="@id/example_row_tv_title"
+                style="@style/ListDescription"
+                android:id="@+id/example_row_tv_description"/>
+
+    </RelativeLayout>
+
+</FrameLayout>
