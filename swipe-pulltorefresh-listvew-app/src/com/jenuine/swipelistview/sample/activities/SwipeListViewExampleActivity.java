@@ -41,6 +41,13 @@ public class SwipeListViewExampleActivity extends FragmentActivity {
 
 	private ProgressDialog progressDialog;
 
+	
+	@Override
+	public void onBackPressed() {
+		// TODO Auto-generated method stub
+//		super.onBackPressed();
+	}
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -182,6 +189,8 @@ public class SwipeListViewExampleActivity extends FragmentActivity {
 
 	}
  
+	
+	
 	public void loadItemsRefresh(){
 		new ListAppTask().execute();
 	}

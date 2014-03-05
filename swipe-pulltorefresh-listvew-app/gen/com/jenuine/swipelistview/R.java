@@ -186,23 +186,23 @@ containing a value of this type.
         public static final int both=0x7f05000d;
         public static final int cantOpen=0x7f050008;
         public static final int choice=0x7f050011;
-        public static final int discard=0x7f050022;
+        public static final int discard=0x7f050021;
         public static final int dismiss=0x7f050010;
-        public static final int dontShow=0x7f05001e;
+        public static final int dontShow=0x7f05001d;
         public static final int dp=0x7f050015;
-        public static final int goToGitHub=0x7f05001d;
+        public static final int goToGitHub=0x7f05001c;
         public static final int googlePlay=0x7f050006;
         public static final int left=0x7f05000b;
         public static final int leftAction=0x7f05000e;
         public static final int leftOffset=0x7f050014;
-        public static final int loading=0x7f050020;
+        public static final int loading=0x7f05001f;
         public static final int milliseconds=0x7f050017;
         public static final int mode=0x7f05000a;
-        public static final int newTag=0x7f050021;
+        public static final int newTag=0x7f050020;
         public static final int ok=0x7f05001b;
         public static final int open=0x7f050005;
         public static final int openOnLongPress=0x7f050018;
-        public static final int others=0x7f05001f;
+        public static final int others=0x7f05001e;
         public static final int ptr_last_updated=0x7f050003;
         public static final int ptr_pull_to_refresh=0x7f050000;
         public static final int ptr_refreshing=0x7f050002;
@@ -213,7 +213,6 @@ containing a value of this type.
         public static final int rightOffset=0x7f050013;
         public static final int settings=0x7f050009;
         public static final int uninstall=0x7f050007;
-        public static final int visit47=0x7f05001c;
     }
     public static final class style {
         public static final int Line=0x7f040010;

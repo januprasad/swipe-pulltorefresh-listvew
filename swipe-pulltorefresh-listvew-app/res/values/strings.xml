@@ -3,7 +3,7 @@
 
 <resources>
 
-    <string name="appName">SwipeListView Demo</string>
+    <string name="appName">SwipePulltoRefreshListView Demo</string>
     <string name="open">Open</string>
     <string name="googlePlay">Google Play</string>
     <string name="uninstall">Uninstall</string>
@@ -30,7 +30,6 @@
     <string name="aboutMessage">This is just a simple demo for the Open Source SwipeListView Android Library by 47 Degrees. Find all source, documentation and packaged downloads at GitHub. Cheers!</string>
     <string name="ok">Ok</string>
 
-    <string name="visit47">Visit 47deg</string>
     <string name="goToGitHub">Go to GitHub</string>
 
     <string name="dontShow">Don\'t show this message again</string>
